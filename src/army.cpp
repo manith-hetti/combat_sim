@@ -1,5 +1,6 @@
-#include <../include/army.h>
+#include "../include/army.h"
 #include <random>
+#include <iostream>
 
 Army::Army(int num_fighters, int max_strength, int min_strength)
     :m_num_fighters{num_fighters},
@@ -8,10 +9,27 @@ Army::Army(int num_fighters, int max_strength, int min_strength)
     army{}
 {}
 
-std::vector<int>& Army::populate_army(int num_fighters) {
+void Army::populate_army() {
     std::default_random_engine generator;
-    std::uniform_int_distribution<int> distribution(Army::m_max_strength, 9);
-    for (auto i = 0; i < num_fighters; i++) {
+    std::uniform_int_distribution<int> distribution(m_min_strength, m_max_strength);
+    for (auto i = 0; i < m_num_fighters; i++) {
+        int rand = distribution(generator);
+        army.push_back(rand);
+        std::cout << army[i] << std::endl;
+        std::cout << &army[i] << std::endl;
+    }
+}
 
+std::vector<int>& Army::get_army() {
+    return army;
+}
+
+int main() {
+    Army human(5, 100, 50);
+    human.populate_army();
+    std::vector<int>& humans = human.get_army();
+    for (auto& i : humans) {
+        std::cout << humans[i] << std::endl;
+        std::cout << &humans[i] << std::endl;
     }
 }
