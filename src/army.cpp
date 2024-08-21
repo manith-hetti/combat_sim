@@ -15,8 +15,6 @@ void Army::populate_army() {
     for (auto i = 0; i < m_num_fighters; i++) {
         int rand = distribution(generator);
         army.push_back(rand);
-        std::cout << army[i] << std::endl;
-        std::cout << &army[i] << std::endl;
     }
 }
 
@@ -26,10 +24,18 @@ std::vector<int>& Army::get_army() {
 
 int main() {
     Army human(5, 100, 50);
+    Army zombie(10, 50, 10);
     human.populate_army();
+    zombie.populate_army();
     std::vector<int>& humans = human.get_army();
+    std::vector<int>& zombies = zombie.get_army();
+    std::cout << "The Humans: " << std::endl;
     for (auto& i : humans) {
-        std::cout << humans[i] << std::endl;
-        std::cout << &humans[i] << std::endl;
+        std::cout << i << std::endl;
+    }
+    std::cout << "The Zombies: " << std::endl;
+    for (auto& i : zombies) {
+        std::cout << i << std::endl;
     }
 }
+

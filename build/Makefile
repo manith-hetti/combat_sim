@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named combat
+# Target rules for targets named army
 
 # Build rule for target.
-combat: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 combat
-.PHONY : combat
+army: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 army
+.PHONY : army
 
 # fast build rule for target.
-combat/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/combat.dir/build.make CMakeFiles/combat.dir/build
-.PHONY : combat/fast
+army/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/army.dir/build.make CMakeFiles/army.dir/build
+.PHONY : army/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/army.o: src/army.cpp.o
+.PHONY : src/army.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/combat.dir/build.make CMakeFiles/combat.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/army.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/army.dir/build.make CMakeFiles/army.dir/src/army.cpp.o
+.PHONY : src/army.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/army.i: src/army.cpp.i
+.PHONY : src/army.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/combat.dir/build.make CMakeFiles/combat.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/army.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/army.dir/build.make CMakeFiles/army.dir/src/army.cpp.i
+.PHONY : src/army.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/army.s: src/army.cpp.s
+.PHONY : src/army.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/combat.dir/build.make CMakeFiles/combat.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/army.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/army.dir/build.make CMakeFiles/army.dir/src/army.cpp.s
+.PHONY : src/army.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... combat"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... army"
+	@echo "... src/army.o"
+	@echo "... src/army.i"
+	@echo "... src/army.s"
 .PHONY : help
 
 
