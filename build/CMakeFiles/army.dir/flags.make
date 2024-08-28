@@ -4,7 +4,7 @@
 # compile CXX with /usr/lib64/ccache/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I"/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build" -I"/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/include"
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++17
 

@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build/CMakeFiles" "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build//CMakeFiles/progress.marks"
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build/CMakeFiles" "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build/src//CMakeFiles/progress.marks"
+	cd "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,68 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named army
+# Convenience name for target.
+src/CMakeFiles/Army.dir/rule:
+	cd "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Army.dir/rule
+.PHONY : src/CMakeFiles/Army.dir/rule
 
-# Build rule for target.
-army: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 army
-.PHONY : army
-
-# fast build rule for target.
-army/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/army.dir/build.make CMakeFiles/army.dir/build
-.PHONY : army/fast
-
-#=============================================================================
-# Target rules for targets named Army
-
-# Build rule for target.
-Army: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Army
+# Convenience name for target.
+Army: src/CMakeFiles/Army.dir/rule
 .PHONY : Army
 
 # fast build rule for target.
 Army/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Army.dir/build.make src/CMakeFiles/Army.dir/build
+	cd "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Army.dir/build.make src/CMakeFiles/Army.dir/build
 .PHONY : Army/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+army.o: army.cpp.o
+.PHONY : army.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/army.dir/build.make CMakeFiles/army.dir/main.cpp.o
-.PHONY : main.cpp.o
+army.cpp.o:
+	cd "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Army.dir/build.make src/CMakeFiles/Army.dir/army.cpp.o
+.PHONY : army.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+army.i: army.cpp.i
+.PHONY : army.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/army.dir/build.make CMakeFiles/army.dir/main.cpp.i
-.PHONY : main.cpp.i
+army.cpp.i:
+	cd "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Army.dir/build.make src/CMakeFiles/Army.dir/army.cpp.i
+.PHONY : army.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+army.s: army.cpp.s
+.PHONY : army.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/army.dir/build.make CMakeFiles/army.dir/main.cpp.s
-.PHONY : main.cpp.s
+army.cpp.s:
+	cd "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Army.dir/build.make src/CMakeFiles/Army.dir/army.cpp.s
+.PHONY : army.cpp.s
 
 # Help Target
 help:
@@ -175,10 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Army"
-	@echo "... army"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... army.o"
+	@echo "... army.i"
+	@echo "... army.s"
 .PHONY : help
 
 
@@ -190,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

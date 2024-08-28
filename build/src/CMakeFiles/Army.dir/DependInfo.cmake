@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/main.cpp" "CMakeFiles/army.dir/main.cpp.o" "gcc" "CMakeFiles/army.dir/main.cpp.o.d"
+  "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/src/army.cpp" "src/CMakeFiles/Army.dir/army.cpp.o" "gcc" "src/CMakeFiles/Army.dir/army.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

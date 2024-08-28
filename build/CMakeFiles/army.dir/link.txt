@@ -1,1 +1,1 @@
-/usr/lib64/ccache/c++ CMakeFiles/army.dir/src/army.cpp.o -o army 
+/usr/lib64/ccache/c++ CMakeFiles/army.dir/main.cpp.o -o army  src/libArmy.a 

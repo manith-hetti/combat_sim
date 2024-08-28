@@ -69,29 +69,30 @@ include CMakeFiles/army.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/army.dir/flags.make
 
-CMakeFiles/army.dir/src/army.cpp.o: CMakeFiles/army.dir/flags.make
-CMakeFiles/army.dir/src/army.cpp.o: /home/manith-hetti/Documents/Game\ Dev/MakingGamesWithBen/Combat\ Simulator/src/army.cpp
-CMakeFiles/army.dir/src/army.cpp.o: CMakeFiles/army.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/army.dir/src/army.cpp.o"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/army.dir/src/army.cpp.o -MF CMakeFiles/army.dir/src/army.cpp.o.d -o CMakeFiles/army.dir/src/army.cpp.o -c "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/src/army.cpp"
+CMakeFiles/army.dir/main.cpp.o: CMakeFiles/army.dir/flags.make
+CMakeFiles/army.dir/main.cpp.o: /home/manith-hetti/Documents/Game\ Dev/MakingGamesWithBen/Combat\ Simulator/main.cpp
+CMakeFiles/army.dir/main.cpp.o: CMakeFiles/army.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/army.dir/main.cpp.o"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/army.dir/main.cpp.o -MF CMakeFiles/army.dir/main.cpp.o.d -o CMakeFiles/army.dir/main.cpp.o -c "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/main.cpp"
 
-CMakeFiles/army.dir/src/army.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/army.dir/src/army.cpp.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/src/army.cpp" > CMakeFiles/army.dir/src/army.cpp.i
+CMakeFiles/army.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/army.dir/main.cpp.i"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/main.cpp" > CMakeFiles/army.dir/main.cpp.i
 
-CMakeFiles/army.dir/src/army.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/army.dir/src/army.cpp.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/src/army.cpp" -o CMakeFiles/army.dir/src/army.cpp.s
+CMakeFiles/army.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/army.dir/main.cpp.s"
+	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/main.cpp" -o CMakeFiles/army.dir/main.cpp.s
 
 # Object files for target army
 army_OBJECTS = \
-"CMakeFiles/army.dir/src/army.cpp.o"
+"CMakeFiles/army.dir/main.cpp.o"
 
 # External object files for target army
 army_EXTERNAL_OBJECTS =
 
-army: CMakeFiles/army.dir/src/army.cpp.o
+army: CMakeFiles/army.dir/main.cpp.o
 army: CMakeFiles/army.dir/build.make
+army: src/libArmy.a
 army: CMakeFiles/army.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable army"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/army.dir/link.txt --verbose=$(VERBOSE)

@@ -1,3 +1,6 @@
 /home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build/CMakeFiles/army.dir
 /home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build/CMakeFiles/edit_cache.dir
 /home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build/CMakeFiles/rebuild_cache.dir
+/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build/src/CMakeFiles/Army.dir
+/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build/src/CMakeFiles/edit_cache.dir
+/home/manith-hetti/Documents/Game Dev/MakingGamesWithBen/Combat Simulator/build/src/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,2 @@
+/usr/local/bin/ar qc libArmy.a CMakeFiles/Army.dir/army.cpp.o
+/usr/local/bin/ranlib libArmy.a
